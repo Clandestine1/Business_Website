@@ -1,0 +1,167 @@
+  @font-face {
+  font-family: "coco";
+    src: url("coco.ttf")
+}
+
+body {
+	position: relative;
+	font: 400 1em/1.5 "Neuton";
+  background: #090d00;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  margin: 0;
+}
+
+.test {
+	border: solid 4px black;
+}
+
+#background {
+width: 100%;
+height: 655px;
+}
+
+#dwp {
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.94);
+  border-width: 4px;
+  padding: 1.5em 0em;
+  width: 40em;
+  margin: 0 0 0 -20em;
+  color: black;
+  font-size: 19.1px;
+  text-shadow: 2px 2px 2px #1A5298;
+  opacity: 1;
+  background-color: rgba(219, 219, 220, 0.74);
+  animation-name: bossy;
+    animation-duration: 9s;
+     -webkit-animation-duration: 9s;
+    animation-timing-function: ease-in-out-out;
+}
+
+#dwp:hover {
+	background-color: rgba(198, 198, 213, 0.64);
+	border: 4px double rgba(0, 0, 0, 0.54);
+	text-shadow: 4px 4px 4px #1A5298;
+	font-weight: bolder;
+	background-image: url(extra/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1:hover {
+	opacity: .1;
+}
+
+h1 {
+  font: 700 4em/1 "coco";
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  filter: invert(100%);
+  -webkit-background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+  @keyframes bossy {
+   0% { 
+        opacity: .8;
+        font-size: 19px;
+        background-color: rgba(219, 219, 220, 0.07);
+        text-shadow: 2px 2px 2px #1A5298;
+        animation-timing-function: ease-in-out;
+    }
+    10% { 
+        opacity: 1;
+        font-size: 19.1px;
+        text-shadow: 4px 4px 4px #1A5298;
+        background-color: rgba(219, 219, 220, 0.14);
+        animation-timing-function: ease-in-out;
+    }
+    20% { 
+        opacity: .8;
+        font-size: 19px;
+        text-shadow: 2px 2px 2px #1A5298;
+        background-color: rgba(219, 219, 220, 0.24);
+        animation-timing-function: ease-in-out;
+    }
+    30% { 
+        opacity: 1;
+        font-size: 19.1px;
+        text-shadow: 4px 4px 4px #1A5298;
+        background-color: rgba(219, 219, 220, 0.30);
+        animation-timing-function: ease-in-out;
+    }
+    40% { 
+        opacity: .8;
+        font-size: 19px;
+        text-shadow: 2px 2px 2px #1A5298;
+        background-color: rgba(219, 219, 220, 0.38);
+        animation-timing-function: ease-in-out;
+    }
+    50% { 
+        opacity: 1;
+        font-size: 19.1px;
+        text-shadow: 4px 4px 4px #1A5298;
+        background-color: rgba(219, 219, 220, 0.44);
+        animation-timing-function: ease-in-out;
+    }
+    60% { 
+        opacity: .8;
+        font-size: 19px;
+        text-shadow: 2px 2px 2px #1A5298;
+        background-color: rgba(219, 219, 220, 0.50);
+        animation-timing-function: ease-in-out;
+    }
+    70% { 
+        opacity: 1;
+        font-size: 19.1px;
+        text-shadow: 4px 4px 4px #1A5298;
+        background-color: rgba(219, 219, 220, 0.56);
+        animation-timing-function: ease-in-out;
+    }
+    80% { 
+        opacity: .8;
+        text-shadow: 2px 2px 2px #1A5298;
+        background-color: rgba(219, 219, 220, 0.62);
+        font-size: 19px;
+        animation-timing-function: ease-in-out;
+    }
+    90% { 
+        opacity: .9;
+        text-shadow: 4px 4px 4px #1A5298;
+        font-size: 19.1px;
+        background-color: rgba(219, 219, 220, 0.68);
+        animation-timing-function: ease-in-out;
+    }
+    100% { 
+        opacity: 1;
+        font-size: 19px;
+        text-shadow: 2px 2px 2px #1A5298;
+        background-color: rgba(219, 219, 220, 0.74);
+        animation-timing-function: ease-in-out;
+    }
