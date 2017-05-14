@@ -12,9 +12,12 @@
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-    transform: scale(1.1);
+transform: scale(1.1);
 }
 
+html { 
+	height: 100%; 
+}
 
   @font-face {
   font-family: "coco";
@@ -40,34 +43,39 @@
 body {
 	position: relative;
 	font: 400 1em/1.5 "Neuton";
-  background-color: rgba(213, 215, 221, 1);
+  background-color: rgba(247, 241, 229  , 1);
   text-align: center;
   margin: 0;
 }
 
+#banner { background: url(http://f.cl.ly/items/1b2V08451N440W0H420K/bg.jpg) no-repeat fixed 50% 0; background-size: cover; color: #fff; height: 100%; width: 100%; }
+
+#bannertext { width: 24em; position: fixed; top: 20%; left: 50%; border: .5em solid #fff; margin-left: -12em; padding: 2em 0; }
+
+#para {
+	 font: 700 2.8em/1.2 "Droid Sans", sans-serif; 
+}
+
 #clock, #gear, #phone {
 	position: absolute;
-	top: 60%;
+	top: 46%;
 }
 
 #clock {
-	right: 84%;
-	transform: scale(1.6);
+	right: 74%;
+	transform: scale(1.7);
 }
 
 #gear {
-	right: 4%;
-	transform: scale(1.6);
+	right: 14%;
+	transform: scale(1.7);
 }
 
 #phone {
 	right: 44%;
-	transform: scale(1.6);
+	transform: scale(1.7);
 }
 
-.test {
-	border: solid 4px gray;
-}
 
 #background {
 width: 100%;
@@ -94,8 +102,8 @@ height: 655px;
   opacity: 1;
   background-color: rgba(219, 219, 220, 0.64);
   animation-name: bossy;
-    animation-duration: 9s;
-     -webkit-animation-duration: 9s;
+    animation-duration: 5s;
+     -webkit-animation-duration: 5s;
     animation-timing-function: ease-in-out;
     box-shadow: 4px 4px 2px rgba(6, 10, 21, 0.6);
 }
@@ -111,11 +119,11 @@ height: 655px;
 	box-shadow: 4px 4px 2px rgba(32, 31, 32, 0.6);
 }
 
-h1:hover {
+#boss:hover {
 	opacity: 0;
 }
 
-h1 {
+#boss {
 	font-family: 'Chonburi', cursive;
   font: 700 4em/1 "coco";
   letter-spacing: 0;
@@ -141,8 +149,8 @@ h1 {
 	bottom: 76%;
 	right: 14%;
 	animation-name: bossy;
-    animation-duration: 9s;
-     -webkit-animation-duration: 9s;
+    animation-duration: 7s;
+     -webkit-animation-duration: 7s;
      animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -151,6 +159,10 @@ h1 {
 	background-color: rgba(213, 215, 221, 1);
 	margin-bottom: -4%;
 	border-radius: none;
+	z-index: -1;
+	font-family: 'Chonburi', cursive;
+	font-weight: bolder;
+	font-size: 34px;
 }
 
 #myAffix{
@@ -158,26 +170,44 @@ h1 {
 }
 
 #tabe {
-	height: 1000px;
 	display: inline-grid;
+	border: 4px solid black;
+	height: 1000px;
 }
 
 #one {
 	position: absolute;
-float: left;
+	right: 69%;
+	width: 25%;
+	font-size: 24px;
+	top: 56%;
 }
 
 #two {
 	position: absolute;
+	right: 37%;
+	width: 25%;
+	font-size: 24px;
+	top: 56%;
 }
 
 #three {
 	position: absolute;
-	float: right;
+	left: 69%;
+	width: 25%;
+	font-size: 24px;
+	top: 56%;
+}
+
+#serve {
+	font-weight: bolder;
+	font-size: 64px;
+	font-family: 'Chonburi', cursive;
+	text-shadow: 3px 2px #D5B638;
 }
 
 .row1{
-	height: 40px;
+	height: 200px;
 	display: inline-flex;
 }
 
@@ -195,7 +225,6 @@ float: left;
 
 .navi {
 	font-size: 34px;
-	font-family: 'Suez One', serif;
 }
 
 .active {
@@ -207,10 +236,13 @@ float: left;
 	color: rgba(4, 4, 4, 1) !important;
 	padding-left: 50px;
 	padding-right: 50px;
+	z-index: -1;
+	text-shadow: 2px 1px #D5B638;
 }
 
 .nav.navbar-nav.navbar-right>li>a:hover {
 	color: rgba(61, 128, 194, 1) !important;
+	text-shadow: 2px 3px black;
 	/*background-color: rgba(62, 4, 73, 0.2) !important;*/
 }
 
