@@ -1,6 +1,24 @@
+
+
   @font-face {
   font-family: "coco";
+  font-style:  normal;
+  font-weight: 400;
     src: url("coco.ttf")
+}
+
+  @font-face {
+  font-family: "bella";
+  font-style:  normal;
+  font-weight: 400;
+    src: url("bella.ttf")
+}
+
+  @font-face {
+  font-family: "fish";
+  font-style:  normal;
+  font-weight: 400;
+    src: url("fish.ttf")
 }
 
 body {
@@ -12,8 +30,10 @@ body {
   margin: 0;
 }
 
+
+
 .test {
-	border: solid 4px black;
+	border: solid 4px pink;
 }
 
 #background {
@@ -23,8 +43,8 @@ height: 655px;
 
 #dwp {
 	position: absolute;
-	bottom: 25%;
-	left: 50%;
+	top: 7%;
+	left: 49%;
   text-transform: uppercase;
   letter-spacing: .5em;
   display: inline-block;
@@ -41,7 +61,8 @@ height: 655px;
   animation-name: bossy;
     animation-duration: 9s;
      -webkit-animation-duration: 9s;
-    animation-timing-function: ease-in-out-out;
+    animation-timing-function: ease-in-out;
+    box-shadow: 4px 4px 2px rgba(6, 10, 21, 0.6);
 }
 
 #dwp:hover {
@@ -52,10 +73,11 @@ height: 655px;
 	background-image: url(extra/logo.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	box-shadow: 4px 4px 2px rgba(32, 31, 32, 0.5);
 }
 
 h1:hover {
-	opacity: .1;
+	opacity: 0;
 }
 
 h1 {
@@ -75,6 +97,61 @@ h1 {
   /* Activate hardware acceleration for smoother animations */
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
+}
+
+#small {
+	width: 45%;
+	position: relative;
+	bottom: 76%;
+	right: 14%;
+}
+
+#nav {
+	background-color: rgba(213, 215, 221, 1);
+	margin-bottom: 0%;
+	border: solid 2px #D6D6E7;
+	border-radius: none;
+
+}
+
+#tabe {
+	height: 1000px;
+}
+
+#one {
+	
+}
+
+#walker {
+	position: absolute;
+	bottom: -18%;
+	list-style: none;
+	margin-left: 4%;
+	font-weight: bolder;
+	font-size: 45px;
+	font-family: 'bella', serif;
+	text-shadow: 2.4px 2.4px 2.4px rgba(61, 128, 194, 1);
+	color: rgba(94, 97, 99, 1);
+}
+
+.active a {
+	color: rgba(128, 104, 75, 0.3) !important;
+}
+
+.nav.navbar-nav.navbar-right>li>a {
+	color: rgba(4, 4, 4, 1) !important;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.nav.navbar-nav.navbar-right>li>a:hover {
+	color: rgba(61, 128, 194, 1) !important;
+	/*background-color: rgba(62, 4, 73, 0.2) !important;*/
+}
+
+.navi {
+	font-size: 34px;
+	font-family: 'Suez One', serif;
 }
 
 /* Animate Background Image */
