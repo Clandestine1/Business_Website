@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+<!--id="myAffix" data-spy="affix" data-offset-top="60" data-offset-bottom="200" role="navigation"-->
 <div id="myAffix" data-spy="affix" data-offset-top="60" data-offset-bottom="200" role="navigation">
 <nav id="nav" class="navbar navbar-default">
   <div class="container-fluid">
@@ -32,21 +32,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand hvr-bob" href="https://www.linkedin.com/in/lashauna-walker/"><img id="small" alt="Brand" src="extra/logosmall.png"></a><!--<li id="walker" class="navi hidden-sm collapsed">DWP</li>-->
+      <a class="navbar-brand hvr-bob" href="https://www.linkedin.com/in/lashauna-walker/"><img id="small" alt="Brand" src="extra/logoside.png"></a></a><!--<li id="walker" class="navi hidden-sm collapsed">DWP</li>-->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right ">
-        <li class="hvr-grow-shadow navi"><a href="#image">Home</a></li>
-        <li class="hvr-grow-shadow navi"><a href="#one">Services</a></li>
+        <li class="hvr-grow-shadow navi"><a href="#vid">Home</a></li>
+        <li class="hvr-grow-shadow navi"><a href="#serve">Services</a></li>
         <li class="hvr-grow-shadow navi"><a href="#">About</a></li>
         <li class="hvr-grow-shadow navi"><a href="#">Contact</a></li>
         <li class="dropdown">
          
           <ul class="dropdown-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#vid">Home</a></li>
+            <li><a href="#serve">Services</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
             <!--<li role="separator" class="divider"></li>
@@ -61,8 +61,6 @@
 </nav>
 </div>
 
-
-<section id="set-1">
         <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
           <a href="#set-2" id="clock" class="hi-icon hi-icon-clock ">Time</a>
           <a href="#set-2" id="gear" class="hi-icon hi-icon-cog">Settings</a>
@@ -75,67 +73,44 @@
   <img id="background" src="extra/front.jpg" class="img-responsive" alt="Responsive image">
 </div>-->
 
-<div id="vid"></div>
+<video id="vid" playsinline autoplay muted loop poster="video.mov" class=".embed-responsive-item">
+    <source src="video.mov" type="video/mp4">
+</video>
 
-<div id="dwp">Never Stop Improving
-  <h1 id="boss"><span style="font-size: 104px;">D.W.P.</span> Maintenance <span style="font-size: 104px;">Corp.</span></h1>
+<div id="me">
+<div id="try">
+<div class="hvr-buzz" id="dwp">Never Stop Improving
+  <h1 class="hvr-pop" id="boss"><span style="font-size: 104px;">D.W.P.</span> Maintenance <span style="font-size: 104px;">Corp.</span></h1>
   Established MMXIV
 </div> 
+</div>
+</div>
+
 <center><h2 id="serve">Our Services</h2></center>    
 
 <div id="tabe" class="container-fluid">
-<div class="row container"><lo
+<div class="row container">
   <div id="one" class="col-xs-6 col-sm-4 row1 center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minime vero, inquit ille, consentit. Eam tum adesse, cum dolor omnis absit; Vide, ne etiam menses!</div>
   <div id="two" class="col-xs-6 col-sm-4 row1 center">Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Idemne potest esse dies saepius, qui semel fuit?</div>
-  <div id="three" class="col-xs-6 col-sm-4 row1 center">De hominibus dici non necesse est. Certe nihil nisi quod possit ipsum propter se iure laudari. Negat enim summo bono afferre incrementum diem.</div>
+  <div id="three" class="col-xs-6 col-sm-4 row1 center ">De hominibus dici non necesse est. Certe nihil nisi quod possit ipsum propter se iure laudari. Negat enim summo bono afferre incrementum diem.</div>
+</div>
 </div>
 
-<div id="banner">
+<img class="img-responsive" alt="Responsive image" id="para1" src="extra/sunset.jpg">
+<!--<div id="banner">
   <div id="bannertext">
     <h1 id="para">PARAL LAX</h1>
     <p>Finest webdesign since 1870</p>
   </div>
-</div>
-    
-<div class="row">
-  <div class="col-xs-6 col-sm-4 test">.col-xs-6 .col-sm-4</div>
-  <div class="col-xs-6 col-sm-4 test">.col-xs-6 .col-sm-4</div>
-</div>
+</div>-->
 
-  <div class="clearfix visible-xs-block"></div>
-  <div class="col-xs-6 col-sm-4 test">.col-xs-6 .col-sm-4</div>
-</div>
-
+<footer class="footer"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true">2017</span></footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="jquery.scrollme.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="main.js"></script>
-<script type="text/javascript">
-$('#myAffix').affix({
-  offset: {
-    top: 100,
-    bottom: function () {
-      return (this.bottom = $('.footer').outerHeight(true))
-    }
-  }
-});
-
-
-
-/*(function($) {          
-    $(document).ready(function(){                    
-        $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 200) {
-                $('.navbar.navbar-default').fadeIn(500);
-            } else {
-                $('.navbar.navbar-default').fadeOut(500);
-            }
-        });
-    });
-})(jQuery);*/
-</script>
-<footer class="footer"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true">2017</span></footer>
 </body>
 
 </html>
