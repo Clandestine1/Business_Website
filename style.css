@@ -1,3 +1,19 @@
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
 
 
   @font-face {
@@ -24,16 +40,33 @@
 body {
 	position: relative;
 	font: 400 1em/1.5 "Neuton";
-  background: #090d00;
-  color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(213, 215, 221, 1);
   text-align: center;
   margin: 0;
 }
 
+#clock, #gear, #phone {
+	position: absolute;
+	top: 60%;
+}
 
+#clock {
+	right: 84%;
+	transform: scale(1.6);
+}
+
+#gear {
+	right: 4%;
+	transform: scale(1.6);
+}
+
+#phone {
+	right: 44%;
+	transform: scale(1.6);
+}
 
 .test {
-	border: solid 4px pink;
+	border: solid 4px gray;
 }
 
 #background {
@@ -43,12 +76,14 @@ height: 655px;
 
 #dwp {
 	position: absolute;
+	font-weight: bolder;
 	top: 7%;
 	left: 49%;
+	font-family: 'PT Serif', serif;
   text-transform: uppercase;
   letter-spacing: .5em;
   display: inline-block;
-  border: 4px double rgba(255, 255, 255, 0.94);
+  border: 4px double rgba(255, 255, 255, 0.44);
   border-width: 4px;
   padding: 1.5em 0em;
   width: 40em;
@@ -57,7 +92,7 @@ height: 655px;
   font-size: 19.1px;
   text-shadow: 2px 2px 2px #1A5298;
   opacity: 1;
-  background-color: rgba(219, 219, 220, 0.74);
+  background-color: rgba(219, 219, 220, 0.64);
   animation-name: bossy;
     animation-duration: 9s;
      -webkit-animation-duration: 9s;
@@ -66,14 +101,14 @@ height: 655px;
 }
 
 #dwp:hover {
-	background-color: rgba(198, 198, 213, 0.64);
+	background-color: rgba(198, 198, 213, 0.54);
 	border: 4px double rgba(0, 0, 0, 0.54);
 	text-shadow: 4px 4px 4px #1A5298;
 	font-weight: bolder;
 	background-image: url(extra/logo.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	box-shadow: 4px 4px 2px rgba(32, 31, 32, 0.5);
+	box-shadow: 4px 4px 2px rgba(32, 31, 32, 0.6);
 }
 
 h1:hover {
@@ -81,6 +116,7 @@ h1:hover {
 }
 
 h1 {
+	font-family: 'Chonburi', cursive;
   font: 700 4em/1 "coco";
   letter-spacing: 0;
   padding: .25em 0 .325em;
@@ -100,26 +136,49 @@ h1 {
 }
 
 #small {
-	width: 45%;
+	width: 44%;
 	position: relative;
 	bottom: 76%;
 	right: 14%;
+	animation-name: bossy;
+    animation-duration: 9s;
+     -webkit-animation-duration: 9s;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 #nav {
 	background-color: rgba(213, 215, 221, 1);
-	margin-bottom: 0%;
-	border: solid 2px #D6D6E7;
+	margin-bottom: -4%;
 	border-radius: none;
+}
 
+#myAffix{
+	width: 100%;
 }
 
 #tabe {
 	height: 1000px;
+	display: inline-grid;
 }
 
 #one {
-	
+	position: absolute;
+float: left;
+}
+
+#two {
+	position: absolute;
+}
+
+#three {
+	position: absolute;
+	float: right;
+}
+
+.row1{
+	height: 40px;
+	display: inline-flex;
 }
 
 #walker {
@@ -128,14 +187,20 @@ h1 {
 	list-style: none;
 	margin-left: 4%;
 	font-weight: bolder;
-	font-size: 45px;
+	font-size: 4.4em;
 	font-family: 'bella', serif;
 	text-shadow: 2.4px 2.4px 2.4px rgba(61, 128, 194, 1);
 	color: rgba(94, 97, 99, 1);
 }
 
-.active a {
-	color: rgba(128, 104, 75, 0.3) !important;
+.navi {
+	font-size: 34px;
+	font-family: 'Suez One', serif;
+}
+
+.active {
+	text-decoration: underline;
+	text-decoration-color: #D5B638;
 }
 
 .nav.navbar-nav.navbar-right>li>a {
@@ -149,10 +214,10 @@ h1 {
 	/*background-color: rgba(62, 4, 73, 0.2) !important;*/
 }
 
-.navi {
-	font-size: 34px;
-	font-family: 'Suez One', serif;
+.footer {
+	color: pink;
 }
+
 
 /* Animate Background Image */
 @-webkit-keyframes aitf {
@@ -242,3 +307,5 @@ h1 {
         background-color: rgba(219, 219, 220, 0.74);
         animation-timing-function: ease-in-out;
     }
+
+  
