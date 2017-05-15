@@ -31,14 +31,6 @@ $(window).on( 'scroll', function(){
    $('.navbar.navbar-default').fadeIn(14000);
 });
 
-$('#myAffix').affix({
-  offset: {
-    top: 100,
-    bottom: function () {
-      return (this.bottom = $('.footer').outerHeight(true))
-    }
-  }
-});
 
 
 

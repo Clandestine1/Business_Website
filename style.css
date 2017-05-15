@@ -15,6 +15,21 @@
 transform: scale(1.1);
 }
 
+.hvr-icon-forward:before {
+    content: "\f09a";
+}
+.hvr-icon-forward:before {
+    content: "\f08c";
+}
+.hvr-icon-forward:before {
+    content: "\f1e9";
+}
+.hvr-icon-forward:before {
+    content: "\f099";
+}
+.hvr-icon-forward:before {
+    content: "\f2ab";
+}
 
   @font-face {
   font-family: "coco";
@@ -57,7 +72,7 @@ body {
 
 #clock, #gear, #phone {
 	position: absolute;
-	top: 42%;
+	top: 34%;
 }
 
 #clock {
@@ -81,22 +96,27 @@ body {
   background-size: cover;
   background-position: center;  
   top: 100%;
-  margin-top: -114%;
- padding-top: 108%;
+  margin-top: -124%;
+ padding-top: 118%;
     width: 100%;
     z-index: -4;
 
  }
 
 #background {
+position: absolute;
 width: 100%;
-height: 355px;
+bottom: 0;
+z-index: -10;
+height: 455px;
+margin-bottom: -34%;
+
 }
 
 #dwp {
 	position: fixed;
 	font-weight: bolder;
-	top: 3%;
+	top: 14%;
 	left: 49%;
 	font-family: 'PT Serif', serif;
   text-transform: uppercase;
@@ -115,7 +135,7 @@ height: 355px;
   animation-name: bossy;
     animation-duration: 7s;
      -webkit-animation-duration: 7s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
 }
 
 #para1 { 
@@ -123,6 +143,7 @@ height: 355px;
 	top: -50%;
 	margin-top: 58%;
 	width: 100%;
+	z-index: -10;
 	margin-bottom: 0%;
 }
 
@@ -166,9 +187,25 @@ height: 355px;
 	right: 14%;
 }
 
+#about {
+	margin-top: -2%;
+	background-color: rgba(162, 168, 174, .4);
+	font-family: 'PT Serif', serif;
+	font-size: 24px;
+	height: 460px;
+}
+
+#au {
+	font-weight: bolder;
+	font-size: 64px;
+	font-family: 'Chonburi', cursive;
+	text-shadow: 3px 2px #D5B638; 
+}
+
 #nav {
 	background-color: rgba(213, 215, 221, 1);
 	margin-bottom: -4%;
+	z-index: 400;
 	border-radius: none;
 	font-family: 'Chonburi', cursive;
 	font-weight: bolder;
@@ -217,7 +254,7 @@ height: 355px;
 	font-family: 'Chonburi', cursive;
 	text-shadow: 3px 2px #D5B638;
 	position: absolute;
-	bottom: 60%;
+	bottom: 68%;
 	left: 32%;
 }
 
@@ -263,9 +300,19 @@ height: 355px;
 }
 
 .footer {
-	color: pink;
+	position: absolute;
+	color: black;
+	font-size: 24px;
+	top: 134%;
+	left: 34%;
 }
 
+#cont {
+	font-weight: bolder;
+	font-size: 64px;
+	font-family: 'Chonburi', cursive;
+	text-shadow: 3px 2px #D5B638; 
+}
 
 /* Animate Background Image */
 @-webkit-keyframes aitf {
@@ -275,6 +322,14 @@ height: 355px;
   100% {
     background-position: 100% 50%;
   }
+}
+
+form {
+	height: 300px;
+	width: 80%;
+	position: absolute;
+	bottom: -30%;
+	left: 10%;
 }
 
   @keyframes bossy {

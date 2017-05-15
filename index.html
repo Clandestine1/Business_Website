@@ -40,15 +40,15 @@
       <ul class="nav navbar-nav navbar-right ">
         <li class="hvr-grow-shadow navi"><a href="#vid">Home</a></li>
         <li class="hvr-grow-shadow navi"><a href="#serve">Services</a></li>
-        <li class="hvr-grow-shadow navi"><a href="#">About</a></li>
-        <li class="hvr-grow-shadow navi"><a href="#">Contact</a></li>
+        <li class="hvr-grow-shadow navi"><a href="#about">About</a></li>
+        <li class="hvr-grow-shadow navi"><a href="#form">Contact</a></li>
         <li class="dropdown">
          
           <ul class="dropdown-menu">
             <li><a href="#vid">Home</a></li>
             <li><a href="#serve">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#form">Contact</a></li>
             <!--<li role="separator" class="divider"></li>
             <li><a href="#">Contact</a></li>
             <li role="separator" class="divider"></li>
@@ -69,9 +69,9 @@
         
 <!--<i class="hvr-icon-drop fa fa-github-alt fa-5x" aria-hidden="true"></i>-->
 
-<!--<div id="image">
+<div id="image">
   <img id="background" src="extra/front.jpg" class="img-responsive" alt="Responsive image">
-</div>-->
+</div>
 
 <video id="vid" playsinline autoplay muted loop poster="video.mov" class=".embed-responsive-item">
     <source src="video.mov" type="video/mp4">
@@ -103,14 +103,53 @@
     <p>Finest webdesign since 1870</p>
   </div>
 </div>-->
+<div id="about">
+<br>
+<br>
+<h1 id="au">About Us</h1>
+<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<span style="display: inline-flex;"><i class="hvr-icon-fade fa fa-facebook fa-2x" aria-hidden="true"></i>
+<i class="fa fa-linkedin-square fa-2x hvr-icon-fade" aria-hidden="true"></i>
+<i class="fa fa-yelp fa-2x hvr-icon-fade" aria-hidden="true"></i>
+<i class="fa fa-twitter fa-2x hvr-icon-fade" aria-hidden="true"></i>
+<i class="fa fa-snapchat fa-2x hvr-icon-fade" aria-hidden="true"></i></span>
+</div>
 
-<footer class="footer"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true">2017</span></footer>
+<center><form>
+<h1 id="cont">Contact Us</h1>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control bg-info text-white" id="exampleInputName" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label>Email address</label>
+    <input type="email" class="form-control bg-info text-white" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label>Say anything</label><textarea class="form-control bg-info text-white" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-info">Submit</button>
+</form></center>
+
+<footer class="footer"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true">2017 Boss Shauna</span></footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="jquery.scrollme.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="main.js"></script>
+
+<script type="text/javascript">
+  $('#myAffix').affix({
+  offset: {
+    top: 100,
+    bottom: function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
+  }
+});
+
+</script>
 </body>
 
 </html>

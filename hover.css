@@ -2459,7 +2459,7 @@
 .hvr-grow-shadow {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(400px) translateZ(-40px);
+  -webkit-transform: perspective(400px) translateZ(40px);
   transform: perspective(400px) translateZ(-40px);
   box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.3s;
@@ -3147,7 +3147,7 @@
   transition-property: color;
 }
 .hvr-icon-fade:hover:before, .hvr-icon-fade:focus:before, .hvr-icon-fade:active:before {
-  color: #0F9E5E;
+  color: #2479CF;
 }
 
 /* Icon Float Away */
